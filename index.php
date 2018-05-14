@@ -1,34 +1,51 @@
 
 <?php include "header.php";?>
-
+<?php include "nav.php";?>
 <div id = "continut_pag">
-	<?php include "nav.php";?>
+	
 	
 	<main>
-		<h1>Meniul zilei</h1>
+		<div class="row"> 
+			<!-- Linia A --> 
+			<div class="col-sm-12 col-md-12" style="background-color: lightblue;"><h3>Meniul zilei</h3></div> 
 
-		<img src="imagini/meniul_zilei.jpg" />
-		<img src="imagini/meniul_zilei_2.jpg" />
 
-		<article>
-			<p>Pentru comenzi mai mari de 50 Ron transportul este gratuit in localitatea Cluj-Napoca!
-			</p>
-		</article>
+		</div>  <!--  Sfarsit linia A -->  
+		<div class="row"> 
+			<!-- Linia A --> 
+			<div class="col-sm-12 col-md-6" style="background-color: pink;"><img src="imagini/meniul_zilei.jpg" /></div> 
+			<div class="col-sm-12 col-md-6" style="background-color: blue;"><img src="imagini/meniul_zilei_2.jpg" /></div> 
 
-		<article>
-			<h1>Pizza</h1>
-			<img src="imagini/pizza1.jpg" />
-			<img src="imagini/pizza2.jpg" />
+		</div>
+		<div class="row"> 
+			<!-- Linia A --> 
+			<div class="col-sm-12 col-md-12" style="background-color: lightblue;"><h3>Pizza</h3></div> 
+			
+			
+		</div>  <!--  Sfarsit linia A -->  
+		<div class="row"> 
+			<!-- Linia A --> 
+			<div class="col-sm-12 col-md-6" style="background-color: pink;"><img src="imagini/pizza1.jpg" /></div> 
+			<div class="col-sm-12 col-md-6" style="background-color: blue;"><img src="imagini/pizza2.jpg" /></div> 
+		</div>
+		<div class="row"> 
+			<!-- Linia A --> 
+			<div class="col-sm-12 col-md-12" style="background-color: lightblue;"><h3>Kebab</h3></div> 
+			
+			
+		</div>  <!--  Sfarsit linia A -->  
+		<div class="row"> 
+			<!-- Linia A --> 
+			<div class="col-sm-12 col-md-6" style="background-color: pink;"><img src="imagini/kebab1.jpg" /></div> 
+			<div class="col-sm-12 col-md-6" style="background-color: blue;"><img src="imagini/kebab2.jpg" /></div> 
+			
+		</div>
 
-			<p>Alege oricare doua pizza si primesti una gratuita din partea casei!
-			</p>
-		</article>
-		<article>
-			<h1>Kebab</h1>
-			<img src="imagini/kebab1.jpg" />
-			<img src="imagini/kebab2.jpg" />
-			<p> Un kebab gustos cu cele mai bune sosuri!</p>
-		</article>
+
+
+		
+
+
 	</main>
 </div>
 <?php include "footer.php";?>

@@ -1,8 +1,8 @@
 
 <?php include "header.php";?>
-
+<?php include "nav.php";?>
 <div id = "continut_pag">
-	<?php include "nav.php";?>
+	
 	<main>
 		<h1>Preparate din cane de pui</h1>
 			

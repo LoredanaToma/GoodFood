@@ -1,7 +1,8 @@
 
 <?php include "header.php";?>
-<div id = "continut_pag">
 	<?php include "nav.php";?>
+<div id = "continut_pag">
+
 	<main>
 		<h1>Cine suntem?</h1>
 		<img src="imagini/fundal.jpg" />
