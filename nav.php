@@ -6,6 +6,7 @@
       <a href="#news"><a href="despre_noi.php">Despre noi</a>
       <a href="#contact"><a href="meniu.php">Meniu</a>
       <a href="#about"><a href="Contact.php">Contact</a>
+      <a href="#about"><a href="login.php">Baza de date</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>

@@ -54,36 +54,27 @@ footer {
 	margin: 0 auto;
 	padding: 0;
 }
-nav {
-	float: right;
-	width:40%;
-	background-color: pink;
-	font-family: "Times New Roman",serif;
-	font-weight: bold;
-	font-size: 17px;
-
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 5px;
-	
-}
-li {
+#myTopnav {
 	float: left;
+	width:100%;
+	font-family: "Times New Roman";
+	font-weight: bold;
+	font-size: 18px;
+	background-color: white;
+	text-align: right;
+
 }
 
-li a {
 
-	color:darkslategray;
+ a {
+
+	color:green;
 	padding: 5px 15px;
 	text-decoration: none;
 }
 
-li a:hover {
-	background-color:darkseagreen;  
-	color:white;
+  a:hover { 
+	color:black;
 }
 
 div.gallery {
@@ -157,3 +148,53 @@ div.desc {
     display: block;
     text-align: left;
   }
+
+.formular-login{
+padding-right: 250px;
+padding-left: 250px;
+    background-color: blue;
+}
+.centrat {
+ margin: 0 auto;
+ text-align: center;
+} 
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
