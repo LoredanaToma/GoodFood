@@ -4,7 +4,6 @@
 <div id = "continut_pag">
 
 	<main>
-		<h1>Meniu </h1>
 
 		<div class="row"> 
 			<!-- Linia A --> 

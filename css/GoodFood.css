@@ -11,7 +11,6 @@
 #continut_pag {
 	width: 100%;
 	background-color:white;
-	border-top: 3px solid #00543C;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -45,8 +44,7 @@ main {
 
 footer {
 	max-width: 1200px;
-	height: 1.8rem;
-	background-color: lightblue;
+	height: 2rem;
 	letter-spacing: normal;
 	text-align: center;
 	font-size: 0.9em;
@@ -149,6 +147,7 @@ div.desc {
     text-align: left;
   }
 
+
 .formular-login{
 padding-right: 250px;
 padding-left: 250px;
@@ -181,7 +180,7 @@ padding-left: 250px;
 }
 
 .input-field:focus {
-    border: 2px solid dodgerblue;
+    border: 1px solid dodgerblue;
 }
 
 /* Set a style for the submit button */
@@ -196,5 +195,11 @@ padding-left: 250px;
 }
 
 .btn:hover {
-    opacity: 1;
+    opacity: 5;
 }
+ #myCarousel {
+   max-width:1200px; 
+   position:relative;
+   top:0;
+}
+

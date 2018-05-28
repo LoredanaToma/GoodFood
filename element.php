@@ -11,7 +11,7 @@
       public $id_produs;
       public $id_categ;
       public $prod;
-      public $imagini;
+      public $imag1;
       public $imag2;
       public $pret;
       public $prezentare;

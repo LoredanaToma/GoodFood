@@ -13,7 +13,7 @@
     public $id_produs;
     public $id_categ;
     public $prod;
-    public $imag;
+    public $imag1;
     public $imag2;
     public $pret;
     public $prezentare;
@@ -24,7 +24,7 @@
   $stmt->execute();
   echo "<div class=\"ciorbe_pag\">";
   while ($prod = $stmt->fetchObject('Produse')) {
-  $img = $prod->imag;
+  $img = $prod->imag1;
   $id = $prod->id_produs;
   echo '<a href="element.php?idprod='.$id.'" class=\"ciorba_vacuta\"><img src="imagini/ciorbe/'.$img.'" alt="ciorba vacuta"/></a>';
  }
