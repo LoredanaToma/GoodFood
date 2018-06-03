@@ -3,7 +3,6 @@
 <?php include "nav.php";?>
 <div id = "continut_pag">
 
-	<main>
 		<?php
   include("conn.php");
 
@@ -23,15 +22,15 @@
           $stmt = $cnx->prepare($cda);
           $stmt->execute();
           $prod = $stmt->fetchObject('Produse');
-          echo "<article class=\"produs\"><h2>$prod->prod</h2>";
-          echo '<img src="imagini/ciorbe/'.$prod->imag2.'" alt="" />';
+          echo "<article class=\"centrat\"><h2>$prod->prod</h2>";
+          echo '<img src="imagini/'.$prod->imag2.'" alt="img" class="responsive"'; 
+          echo"<br></br>";
           echo "<h4>Prezentare</h4><p>$prod->prezentare</p>";
           echo '<h4>Pret</h4><p class="bold">'.$prod->pret.' Ron</p>';
           echo '<div class="pret"><a href="cumpar.php?id_produs='.$idp.'">Comanda</a></p></div>';
           $cnx = null;
           } 
  ?>
-</main>
 
 </div>
 <?php include "footer.php";?>

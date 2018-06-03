@@ -4,7 +4,7 @@
 <div id = "continut_pag">
 	<div class="carousel">  <!-- Linia A --> 
 
-		<div class="col-sm-12 col-md-12 col-lg-12" style="background-color: white;">
+		<div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #1c1e1c;">
 
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 

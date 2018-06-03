@@ -80,10 +80,7 @@
   }
 </script>
   
-<br /><br /><br /><br /><br />
-<div class="livrare">
-<p><a href="#">Informatii privind livrarea</a> |
-    <a href="#">Comentariile clientilor nostri.</a></p>
+
   </main>
 
 </div>

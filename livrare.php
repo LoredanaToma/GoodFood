@@ -2,11 +2,11 @@
 <?php include "header.php";?>
 <?php include "nav.php";?>
 <div id = "continut_pag">
+	<br><br>
 	
-	<main>
-		<h1>Informatii despre livrare</h1>
+		<h2 class=" centrat">Informatii despre livrare</h2>
 			
-	</main>
+
 
 </div>
 <?php include "footer.php";?>

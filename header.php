@@ -21,15 +21,25 @@
 <body>
   <div id="continut">
     <header>
-      <div class="col-sm-1 col-md-1 col-lg-12" style="background-color:white;">
+      <div class="row-header">
+       <div class="col-sm-1 col-md-1 col-lg-10" style="background-color:#1c1e1c;">
+          <a href="livrare.php">Informatii privind livrarea </a></div>
+           <div class="col-sm-1 col-md-1 col-lg-2" style="background-color:#1c1e1c;">
+           |<a href="vizite.php">Informatii privind clientii nostri </a></div>
+         </div>
+         <div class="row-search">
+           <div class="col-sm-1 col-md-1 col-lg-12" style="background-color:#1c1e1c;">
+        <form>
+         <input type="text" name="search" placeholder="Search..">
+      </form>
+       </div></div>
+       <div class="row-logo">
+      <div class="col-sm-1 col-md-1 col-lg-12" style="background-color:#1c1e1c;">
         <div class= "logo">
-          <a href="index.php"> <img src="imagini/logo.jpg" alt="GoodFood" style="width:100%;"></a>
+          <a href="index.php"> <img src="imagini/logo1.jpg" alt="GoodFood" style="width:100%;"></a>
         </div>
-        <a href="livrare.php">Informatii privind livrarea </a>|<a href="vizite.php">Informatii privind clientii nostri </a>
-        <form class ="search">
-          <br>
-          <input type = "text" placehold ="Search">
-          <button> Search</button>
+      </div>
+      
 
         </form>
       </div>

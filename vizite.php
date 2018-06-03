@@ -1,9 +1,9 @@
 
 <?php include "header.php";?>
 <?php include "nav.php";?>
-<div class = "div_vizite">
+<div id = "continut_pag">
 	<main>
-  <h1 class="italic centrat"><span class="litera italic">I</span>mpresii ale vizitatorilor</h1><br />
+ <h2 class="centrat">Impresiile clientilor nostri</h2><br />
 <?php
 include("conn.php");
  
@@ -23,20 +23,25 @@ include("conn.php");
       $i=1; //  Contor de linii
       while ($vizit = $stmt->fetchObject('Vizitatori')) {
          if ($i%2==0) {
-            echo "<tr style=\"background-color:#cccccc; \"><td>";
+            echo "<tr style=\"background-color:#1c1e1c; \"><td>";
          }
          else {
-            echo "<tr style=\"background-color:#a0a0a0; \"><td>";
+            echo "<tr style=\"background-color:#1c1e1c; \"><td>";
         }
-        echo $vizit->nr; echo ".    ";
+        //echo $vizit->nr; echo ".    ";
+           echo "<p class=\"vizite alineat\">"; 
+        echo "->";
         echo $vizit->nume; echo "    ";
-        echo $vizit->prenume; echo "  --  ";
+        echo $vizit->prenume; echo "  -  ";
         echo $vizit->email;
-        echo "<br /><br />";
+        echo "<br />";
         echo $vizit->mesaj;
+        echo "<br /><br /><br/>";
         echo "</td></tr>";
         echo "<tr><td> </td></tr>";
         $i++;
+
+
    }
    $cnx = null;
    }

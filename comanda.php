@@ -35,7 +35,7 @@
      </tr>
 
      <tr>
-      <td>Parola Dv. va fi</td>
+      <td>Parola </td>
       <td><input type="password" name = pw></td>
     </tr>
 

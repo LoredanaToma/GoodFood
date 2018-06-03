@@ -1,7 +1,7 @@
 
 <?php include "header.php";?>
 <?php include "nav.php";?>
-<div class = "ciorbe_pag">
+<div id = "continut_pag">
 	<main>
 		<?php
    function testare($data) {
@@ -70,16 +70,16 @@
   }
 
   echo "<p class=\"inserare centrat\">";
-  echo "<h1 class=\"italic centrat\"><span class=\"litera italic\">P</span>rodusul<br />s-a adaugat in baza de date</h1><br />";
-  echo "<form class=\"centrat\"><input type=button value=\"Alt produs\"
+  echo "<h1 class=\"centrat\">Produsul s-a adaugat in baza de date!</h1><br />";
+  echo "<form class=\"centrat\"><input type=button value=\"Adauga alt produs\"
   onClick=\"location.href='adaugare.php'\">";
   echo "<input type=button value=\"Home\" onClick=\"location.href='index.php'\"></form>";
   echo "</p><br /><br />";
-  echo "<p class=\"inserare centrat\">Numele vechi al fisierului: $numeimagine</p>";
+  /*echo "<p class=\"inserare centrat\">Numele vechi al fisierului: $numeimagine</p>";
   echo "<p class=\"inserare centrat\">Numele vechi al fisierului mare:   $numeimaginemare</p>";
   echo "<p class=\"inserare centrat\">Categoria fisierului: $categ</p>";
   echo "<p class=\"centrat inserare\">Noul nume al fisierului: $numeimaginenou</p>";
-  echo "<p class=\"inserare centrat\">Imaginea mare: $numeimaginemarenou</p>"; 
+  echo "<p class=\"inserare centrat\">Imaginea mare: $numeimaginemarenou</p>"; */
   $cnx = null;
 }
 ?>

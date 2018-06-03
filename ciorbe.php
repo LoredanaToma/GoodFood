@@ -1,11 +1,11 @@
 
 <?php include "header.php";?>
 <?php include "nav.php";?>
-<div class = "ciorbe_pag">
+<div id = "continut_pag">
 	<main>
-		<h1>Ciorbe</h1>
+	<h2 class=" centrat">Ciorbe</h2><br/><br/>
 
-		 <main>
+		 
   <?php
     include("conn.php");
 
@@ -22,19 +22,19 @@
   $cda= "SELECT * from produse WHERE id_categ =1";
   $stmt = $cnx->prepare($cda);
   $stmt->execute();
-  echo "<div class=\"ciorbe_pag\">";
+  echo "<div class=\"produs\">";
   while ($prod = $stmt->fetchObject('Produse')) {
   $img = $prod->imag1;
   $id = $prod->id_produs;
-  echo '<a href="element.php?idprod='.$id.'" class=\"ciorba_vacuta\"><img src="imagini/ciorbe/'.$img.'" alt="ciorba vacuta"/></a>';
+  echo '<a href="element.php?idprod='.$id.'"><img src="imagini/'.$img.'" alt="" class="produs" width="280" height="180"</a>';
  }
   $cnx = null;
  }
  ?>
  </div>
-</main>
+
 			
-	</main>
+
 </div>
 <?php include "footer.php";?>
 </body>

@@ -1,13 +1,10 @@
 
 <?php include "header.php";?>
 <?php include "nav.php";?>
-<div class = "Adaugare_pag">
-	<main>
-		<h1>Adaugare de produse</h1>
-
+<div id = "continut_pag">
    <main>
 
-     <h1 class="italic centrat"><span class="litera italic">A</span>daugare</h1><br />
+     <h2 class=" centrat">Adaugare de produse</h2><br />
      <form name="formular" enctype="multipart/form-data" method="post" action="inserare.php" class="centrat">
        <table class="login centrat">
         <tr>

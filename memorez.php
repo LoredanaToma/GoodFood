@@ -1,7 +1,7 @@
 
 <?php include "header.php";?>
 <?php include "nav.php";?>
-<div class = "continut_pag">
+<div id = "continut_pag">
    <main>
 
    <?php 
