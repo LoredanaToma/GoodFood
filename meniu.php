@@ -8,14 +8,14 @@
 		<div class="row"> 
 			<!-- Linia A --> 
 			<div class="col-sm-6 col-md-6" style="background-color: #1c1e1c;"><div class="gallery">	
-				<a href="ciorbe.php"><img src="imagini/ciorba_fasole.jpg"></a> 
+				<a href="ciorbe.php"><img src="imagini/ciorbe.jpg"></a> 
 				<div class="desc">Ciorbe</div>
 			</div></div> 
 			<div class="row"> 
 				<div class="col-sm-12 col-md-12" style="background-color: #1c1e1c;"></div> 
 			</div>  
 			<div class="col-sm-6 col-md-6" style="background-color: #1c1e1c;"><div class="gallery">
-				<a href="supe.php"><img src="imagini/supa_galuste.jpg"></a> 
+				<a href="supe.php"><img src="imagini/supe.jpg"></a> 
 				<div class="desc">Supe</div>
 			</div></div> 
 		</div>
@@ -62,8 +62,8 @@
 				<div class="col-sm-12 col-md-12" style="background-color: #1c1e1c;"></div> 
 			</div>  
 			<div class="col-sm-6 col-md-6" style="background-color:#1c1e1c;"><div class="gallery">
-				<a href="desert.php"><img src="imagini/desert.jpg"></a> 
-				<div class="desc">Desert</div>
+				<a href="garnituri.php"><img src="imagini/garnituri.jpg"></a> 
+				<div class="desc">Garnituri</div>
 			</div></div>
 		</div>
 		<div class="row"> 
@@ -77,8 +77,23 @@
 				<div class="col-sm-12 col-md-12" style="background-color: #1c1e1c;"></div> 
 			</div>  
 			<div class="col-sm-6 col-md-6" style="background-color: #1c1e1c;"><div class="gallery">
-				<a href="bauturi.php"><img src="imagini/bauturi.jpg"></a> 
-				<div class="desc">bauturi</div>
+				<a href="desert.php"><img src="imagini/desert.jpg"></a> 
+				<div class="desc">Desert</div>
+			</div></div>
+		</div>
+				<div class="row"> 
+			<!-- Linia A --> 
+			<div class="col-sm-6 col-md-6" style="background-color: #1c1e1c;"><div class="gallery">	
+				<a href="bauturi_n.php"><img src="imagini/bauturi.jpg">
+				</a> 
+				<div class="desc">Bauturi nealcoolice</div>
+			</div></div> 
+			<div class="row"> 
+				<div class="col-sm-12 col-md-12" style="background-color: #1c1e1c;"></div> 
+			</div>  
+			<div class="col-sm-6 col-md-6" style="background-color: #1c1e1c;"><div class="gallery">
+				<a href="bauturi_a.php"><img src="imagini/bauturi_alcoolice.jpg"></a> 
+				<div class="desc">Bauturi alcoolice</div>
 			</div></div>
 		</div>
 	</div>

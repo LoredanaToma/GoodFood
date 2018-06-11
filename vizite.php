@@ -2,8 +2,9 @@
 <?php include "header.php";?>
 <?php include "nav.php";?>
 <div id = "continut_pag">
+  <br>
 	<main>
- <h2 class="centrat">Impresiile clientilor nostri</h2><br />
+ <h2 class="centrat">Impresiile clientilor nostri</h2><br>
 <?php
 include("conn.php");
  
@@ -30,10 +31,9 @@ include("conn.php");
         }
         //echo $vizit->nr; echo ".    ";
            echo "<p class=\"vizite alineat\">"; 
-        echo "->";
+        echo "";
         echo $vizit->nume; echo "    ";
-        echo $vizit->prenume; echo "  -  ";
-        echo $vizit->email;
+        echo $vizit->prenume; echo "    ";
         echo "<br />";
         echo $vizit->mesaj;
         echo "<br /><br /><br/>";

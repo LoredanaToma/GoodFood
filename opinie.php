@@ -28,7 +28,7 @@
 
             <tr>
                 <td colspan="2">
-                <input type="submit" style="float:left;" value="Trimite parerea ta">
+                <input type="submit" style="float:left;" value="Trimite mesajul ">
                 <input type="reset" style="float:right;" value="Sterge">
            </tr>
         </table>

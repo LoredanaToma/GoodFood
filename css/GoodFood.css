@@ -31,6 +31,12 @@ header {
 nav{
 color:#72f972;
 }
+.article-row{
+	width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-style: italic;
+}
 .text-green{
 	color:#72f972;
 }
@@ -46,7 +52,7 @@ input[type=text],[type=password]{
 	box-sizing: border-box;
 	border: 1px solid #95bf95;
 	border-radius: 4px;
-	font-size: 16px;
+	font-size: 14px;
 	background-color: #1c1e1c;
 	background-image: url('searchicon.png');
 	background-position: 10px 10px; 
@@ -71,10 +77,6 @@ select[name=combo]{
 .text-black{
 	color: black;
 }
-.centrat {
-	margin: 0 auto;
-	text-align: center;
-} 
 .alineat {
 	padding-left:50px;
     float: left;
@@ -175,11 +177,12 @@ div.desc {
 	color: gray;
 }
 
+
 @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
-		float: right;
-		display: block;
+	float: right;
+	display: block;
 	}
 }
 
@@ -190,19 +193,19 @@ div.desc {
 		right: 0;
 		top: 0;
 	}
-	.topnav.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-		
-	}
+.topnav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+
+}
 
 
-	.formular-login{	
-		margin:0 auto;
-		padding-left: 50px;
-		padding-right: 50px;
-	}
+.formular-login{	
+	margin:0 auto;
+	padding-left: 50px;
+	padding-right: 50px;
+}
 }
 .centrat {
 	margin: 0 auto;
@@ -249,7 +252,8 @@ div.desc {
 	opacity: 5;
 }
 #myCarousel {
-	max-width:1200px; 
+	margin:auto;
+	max-width:1000px; 
 	position:relative;
 	top:0;
 }
@@ -260,6 +264,9 @@ div.desc {
 }
 
 .produs{
- padding: 2px;
+position: relative;
+ padding: 5px;
+
  float: left;
+
 }

@@ -2,8 +2,8 @@
 <?php include "header.php";?>
 <?php include "nav.php";?>
 <div id = "continut_pag">
-	<main>
-	<h2 class=" centrat">Ciorbe</h2><br/><br/>
+
+	<h2 class="centrat">Ciorbe</h2><br/><br/>
 
 		 
   <?php
@@ -26,7 +26,7 @@
   while ($prod = $stmt->fetchObject('Produse')) {
   $img = $prod->imag1;
   $id = $prod->id_produs;
-  echo '<a href="element.php?idprod='.$id.'"><img src="imagini/'.$img.'" alt="" class="produs" width="280" height="180"</a>';
+  echo '<a href="element.php?idprod='.$id.'"><img src="imagini/'.$img.'" alt="" class="produs" width="300" height="200"</a>';
  }
   $cnx = null;
  }
