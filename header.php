@@ -24,25 +24,19 @@
     <header>
       <div class="row-header">
        <div class="col-sm-1 col-md-1 col-lg-10" style="background-color:#1c1e1c;">
-          <a href="livrare.php">Informatii privind livrarea </a></div>
-           <div class="col-sm-1 col-md-1 col-lg-2" style="background-color:#1c1e1c;">
-           |<a href="vizite.php">Vezi impresiile clientilor nostri</a></div>
-         </div>
-         <div class="row-search">
-           <div class="col-sm-1 col-md-1 col-lg-12" style="background-color:#1c1e1c;">
-        <form>
-         <input type="text" name="search" placeholder="Search..">
-      </form>
-       </div></div>
-       <div class="row-logo">
-      <div class="col-sm-1 col-md-1 col-lg-12" style="background-color:#1c1e1c;">
-        <div class= "logo">
-          <a href="index.php"> <img src="imagini/logo1.jpg" alt="GoodFood" style="width:100%;"></a>
+        <a href="livrare.php">Informatii privind livrarea </a></div>
+        <div class="col-sm-1 col-md-1 col-lg-2" style="background-color:#1c1e1c;">
+         |<a href="vizite.php">Vezi impresiile clientilor nostri</a></div>
+       </div>
+
+            
+        <div class="logo">
+          <div class="col-sm-12 col-md-12 col-lg-12" style="background-image:url('imagini/header.jpg');">
+            
+              <a href="index.php"><img src="imagini/imageedit_4_2869990415.png" alt="GoodFood" class="responsive" width="1200" height="300"></a>
+           
+          </div>
+          
         </div>
-      </div>
-      
 
-        </form>
-      </div>
-
-    </header>
+      </header>

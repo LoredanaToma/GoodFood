@@ -261,8 +261,8 @@ div.desc {
 }
 
 .produs{
-padding-right: 5px;
-padding: 2px;
-float: center;
+ position: relative;
+ padding: 5px;
+ float: left;
 
 }

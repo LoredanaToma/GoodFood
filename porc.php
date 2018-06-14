@@ -25,7 +25,7 @@
   while ($prod = $stmt->fetchObject('Produse')) {
   $img = $prod->imag1;
   $id = $prod->id_produs;
-  echo '<a href="element.php?idprod='.$id.'"><img src="imagini/'.$img.'" alt="" class="produs" width="300" height="200"</a>';
+  echo '<a href="element.php?idprod='.$id.'"><img src="imagini/'.$img.'" alt="" class="produs" width="368" height="268"</a>';
  }
   $cnx = null;
  }

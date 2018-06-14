@@ -2,11 +2,9 @@
 <?php include "header.php";?>
 <?php include "nav.php";?>
 <div id = "continut_pag">
-	<main>
-	<h2 class=" centrat">Supe</h2><br/><br/>
-
-		 
-  <?php
+<main>
+    <h2 class="centrat">Supe</h2><br><br>
+    <?php
     include("conn.php");
 
      class Produse {
@@ -19,21 +17,20 @@
     public $prezentare;
   }
   if(isset($cnx)) {
-  $cda= "SELECT * from produse WHERE id_categ =2";
+  $cda= "SELECT * from produse WHERE id_categ =1";
   $stmt = $cnx->prepare($cda);
   $stmt->execute();
   echo "<div class=\"produs\">";
   while ($prod = $stmt->fetchObject('Produse')) {
   $img = $prod->imag1;
   $id = $prod->id_produs;
-  echo '<a href="element.php?idprod='.$id.'"><img src="imagini/'.$img.'" alt="" class="produs" width="300" height="200"</a>';
+  echo '<a href="element.php?idprod='.$id.'"><img src="imagini/'.$img.'" alt="" class="produs" width="368" height="268"</a>';
  }
   $cnx = null;
  }
  ?>
- </div>
-
-			
+      
+  </main>
 
 </div>
 <?php include "footer.php";?>

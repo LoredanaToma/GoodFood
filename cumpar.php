@@ -87,7 +87,7 @@ if(isset($cnx)) {
 <br /><br /><br />
 
 <p class="centrat"><a href="finalizez.php">Cumpar produsele</a>   |
-  <a href="index.php">Inapoi in magazin</a>   |   <a
+  <a href="meniu.php">Inapoi in magazin</a>   |   <a
   href="golesc.php">Golesc cosul</a></p>
 </main>
 
