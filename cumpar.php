@@ -5,7 +5,7 @@
 	<main>
     <?php 
     session_start();
-    include "header.php";
+    
     ?>
 
     <div id="continut_pag">
@@ -64,8 +64,8 @@ if(isset($cnx)) {
   $vtotal = 0;
   $articole = explode(',',$cos);
 
-  echo '<h1 class="italic centrat">';
-  echo '<span class="litera italic">Ai</span> ales urmatoarele produse</h1><br />';
+  echo '<h3 class="centrat"><br>';
+  echo 'Cosul tau de cumparaturi</h1><br />';
   echo '<table class="login centrat">';
   foreach ($articole as $item) {
     // Caut produsul in baza de date dupa $item
@@ -80,14 +80,14 @@ if(isset($cnx)) {
     $vtotal += (double)$prod->pret;
   }
   echo "</table><br /><br />";
-  echo '<p class="centrat">Produsele costa in total '.
-  $vtotal."Ron.</p>";
+  echo '<p class="centrat">Cost total: '.
+  $vtotal." RON</p>";
 }
 ?>
 <br /><br /><br />
 
 <p class="centrat"><a href="finalizez.php">Cumpar produsele</a>   |
-  <a href="meniu.php">Inapoi in magazin</a>   |   <a
+  <a href="meniu.php">Mai adauga in cos</a>   |   <a
   href="golesc.php">Golesc cosul</a></p>
 </main>
 

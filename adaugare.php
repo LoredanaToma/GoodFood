@@ -4,7 +4,7 @@
 <div id = "continut_pag">
    <main>
 
-     <h2 class=" centrat">Adaugare de produse</h2><br />
+     <h2 class=" centrat"><br><br>Adaugare produse</h2><br><br>
      <form name="formular" enctype="multipart/form-data" method="post" action="inserare.php" class="centrat">
        <table class="login centrat">
         <tr>
@@ -62,7 +62,7 @@
   <td><input type="text" name="pret" /></td>
 </tr>
 
-<tr>
+<tr><br>
    <td><input type="submit" name="submita" value="Adauga"></td>
    <td><input type="reset" name="submitr" value="Sterge"></td>
 </tr>

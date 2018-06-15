@@ -69,11 +69,11 @@
     exit; 
   }
 
-  echo "<p class=\"inserare centrat\">";
-  echo "<h1 class=\"centrat\">Produsul s-a adaugat in baza de date!</h1><br />";
+  echo "<br><br><br><br><p class=\"inserare centrat\">";
+  echo "<h3 class=\"centrat\">Produsul s-a adaugat in baza de date!</h3><br><br>";
   echo "<form class=\"centrat\"><input type=button value=\"Adauga alt produs\"
   onClick=\"location.href='adaugare.php'\">";
-  echo "<input type=button value=\"Home\" onClick=\"location.href='index.php'\"></form>";
+  echo "<input type=button value=\"Acasa\" onClick=\"location.href='index.php'\"></form>";
   echo "</p><br /><br />";
   /*echo "<p class=\"inserare centrat\">Numele vechi al fisierului: $numeimagine</p>";
   echo "<p class=\"inserare centrat\">Numele vechi al fisierului mare:   $numeimaginemare</p>";

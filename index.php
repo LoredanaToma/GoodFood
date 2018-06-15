@@ -2,6 +2,7 @@
 <?php include "header.php";?>
 <?php include "nav.php";?>
 <div id = "continut_pag">
+	<br>
 	<div class="carousel">  <!-- Linia A --> 
 
 		<div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #1c1e1c;">
@@ -61,7 +62,8 @@
 						<span class="sr-only">Next</span>
 					</a>
 				</div>       
-			</div>  <!--  Sfarsit linia A -->  
+			</div>  <!--  Sfarsit carousel-->  
+			<br>
 		</div>
 		<script src="js/jquery.min.js"></script> 
 		<script src="js/bootstrap.min.js"></script> 
@@ -80,23 +82,25 @@
 		</script>
 		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
-	<div class="article-row">
-	<div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #1c1e1c;"><br><h2>Sa ne prezentam mai intai...</h2><br></div></div>
 		<div class="article-row">
-		<div class="col-sm-12 col-md-6 col-lg-6" style="background-color: #1c1e1c;"><img src="imagini/prezentare1.jpg"alt="img" class="article-row"></div>
-		<div class="col-sm-12 col-md-6 col-lg-6" style="background-color: #1c1e1c;">
-		<p><br>Restaurantul nostru exclusiv cu livrare la domiciliu vine in cu o gama variata de produse deliciose pe care va invitam sa le vizionati din meniul nostru. In ton cu preparatele de bucatarie va oferim o plateta larga de bauturi alcoolice si nealcoolice care sa vina in completarea mesei dumneavoastra. <p><br>Asteptam comanda dumneavoastra!  	 </div></div>
+			<div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #1c1e1c;"><br></div></div>
+			<div class="article-row">
+				<div class="col-sm-12 col-md-6 col-lg-6" style="background-color: #1c1e1c;"><img src="imagini/prezentare1.jpg"alt="img" class="article-row"></div>
+				<div class="col-sm-12 col-md-6 col-lg-6" style="background-color: #1c1e1c;">
+					<p><br><h2>Sa ne prezentam mai intai...</h2><br>Restaurantul nostru exclusiv cu livrare la domiciliu vine cu o gama variata de produse deliciose pe care va invitam sa le vizionati in rubrica <a href="meniu.php">Meniu</a> In ton cu preparatele de bucatarie va oferim o paleta larga de bauturi alcoolice si nealcoolice care sa vina in completarea mesei dumneavoastra. <p><br>Asteptam comanda dumneavoastra!  	 </div></div>
 
-	<div class="article-row">
-	<div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #1c1e1c;"><br><h2>Sa ne prezentam mai intai...</h2><br></div></div>
-		<div class="article-row">
-		
-		<div class="col-sm-12 col-md-6 col-lg-6" style="background-color: #1c1e1c;">
-		<p><br>GoodFood va sta la dispozitie in intervalul orar 8:00 - 23:00 si ne dorim sa imbunatatim acest lucru pe viitor, lucram la un nou proiect de "Delivery night" cu o gama variata de produse ce speram sa vina in intampinarea nevoilor dumneavoastra, mai ales in weekend. <p><br>Pentru orice nelamurire nu ezitati sa ne contactati!	 </div>
-		<div class="col-sm-12 col-md-6 col-lg-6" style="background-color: #1c1e1c;"><img src="imagini/prezentare2.jpg"alt="img" class="article-row"></div></div>
+						<div class="article-row">
+							<div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #1c1e1c;"><br><h2>Si pentru ca ne dorim sa fim din ce in ce mai buni....</h2><br></div></div>
+							<div class="article-row">
 
-	</div>
-	<?php include "footer.php";?>
-</div>
-</body>
-</html> 
+								<div class="col-sm-12 col-md-6 col-lg-6" style="background-color: #1c1e1c;">
+									<p><br>GoodFood va sta la dispozitie in intervalul orar 8:00 - 23:00 de Luni pana Vineri si ne dorim sa imbunatatim acest lucru pe viitor, lucram la un nou proiect intitulat "Delivery night", acesta consta intr-o noua gama variata de produse (surpriza!) ce speram sa vina in intampinarea nevoilor dumneavoastra, mai ales in weekend. <p><br>Pentru orice nelamurire nu ezitati sa ne contactati! <a href="opinie.php">Contact</a>	 </div>
+										<div class="col-sm-12 col-md-6 col-lg-6" style="background-color: #1c1e1c;"><img src="imagini/prezentare2.jpg"alt="img" class="article-row"></div></div>
+
+									</div>
+								</div>
+									<br><br><br><br>
+									<?php include "footer.php";?>
+								</div>
+							</body>
+							</html> 

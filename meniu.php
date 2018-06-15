@@ -3,7 +3,6 @@
 <?php include "nav.php";?>
 <div id = "continut_pag">
 
-	<main>
 
 		<div class="row"> 
 			<!-- Linia A --> 
@@ -96,10 +95,11 @@
 				<div class="desc">Bauturi alcoolice</div>
 			</div></div>
 		</div>
-	</div>
-</main>
+
 
 </div>
-<?php include "footer.php";?>
+<br><br><br><br>
+	<?php include "footer.php";?>
+</div>
 </body>
 </html> 

@@ -34,7 +34,7 @@ if(isset($cnx)) {
     {
       if($utilizator->nume == $n && $utilizator->pass == $p) 
       {
-         echo '<h1 class="italic centrat"><span class="litera italic"> Succes!</h1><br />';
+         echo '<br><br><br><br><h3 class="centrat"> Succes!</h3><br />';
          echo '<form class="centrat" method="post" action="adaugare.php">';
          echo '<input type="submit" name="submit1" value="Adaugare produse">';
          echo '</form></center>';

@@ -2,14 +2,8 @@
 <?php include "header.php";?>
 <?php include "nav.php";?>
 <div class = "continut_pag">
-   <main>
-<?php 
-  session_start();
- ?>
-
-  <div id="continut_pag">
-   <main>
-
+  
+<main>
    <?php 
     include("conn.php");
     function testare($data) {
@@ -18,33 +12,28 @@
      $data = htmlspecialchars($data);
      return $data;
     }
-
    class Clienti {
-    public $cnp;
+    public $tel;
     public $parola;
     public $nume;
     public $adresa;
     public $email;
-    public $telefon;
  
   }
-
  $cos = testare($_REQUEST['coscump']);
  $nume = testare($_REQUEST["num"]);
  $pw = testare($_REQUEST["pw"]);  //  Parola
-
  if(isset($cnx)) {
     $cda = "SELECT * FROM clienti";
     $stmt = $cnx->prepare($cda);
     $stmt->execute();
     //  Caut clientul in tabelul clienti
-
   $interogare = $cnx->prepare("SELECT * FROM clienti");
     $interogare->execute();
     $codcli = 0;
     while ($cli = $stmt->fetchObject('Clienti')) {
       if (strtoupper ($nume) == strtoupper ($cli->nume) && md5($pw) == $cli->parola) {
-        $codcli = $cli->cnp;  //  Preiau val. cheii primare
+        $codcli = $cli->tel;  //  Preiau val. cheii primare
         break;
       }
   }
@@ -59,9 +48,9 @@
                 (NULL, '$codcli', '$item', '1', '$data')");
             $interogare1->execute();
         }
-   echo '<h1 class="italic centrat"><span class="litera italic">C</span>';
-   echo 'omanda preluata pentru <span class="litera italic">'.$nume.'</span> <br />Un operator va va contacta telefonic pentru confirmare.';
-   echo ' <br />Va multumim!</h1><br />';
+  echo '<br><br><br><br><h3 class="centrat">';
+  echo 'Comanda preluata pentru '.$nume.' <br /> in data de '.$data.'! <br /> Ve-ti fi contactat/a telefonic in cel mai scurt timp posibil pentru confirmarea comenzii!';
+  echo ' <br />Va multumim!</h1><br />';
         // Golesc cosul memorat in $_SESSION['cos_cumparaturi']
     unset($_SESSION['cos_cumparaturi']);
   } else {
@@ -80,8 +69,7 @@
   }
 </script>
   
-
-  </main>
+</main>
 
 </div>
 <?php include "footer.php";?>

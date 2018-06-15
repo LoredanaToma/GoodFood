@@ -9,7 +9,8 @@
 
  <div id="continut_pag">
    <main>
-     <h1 class="italic centrat"><span class="litera italic">Sunteti</h1><br />
+    <br><br>
+     <h3 class="italic centrat"><span class="litera italic">Sunteti</h3><br />
       <form name="formular" method="post" action="comanda.php" class="centrat">
         <table class="login centrat">
 
