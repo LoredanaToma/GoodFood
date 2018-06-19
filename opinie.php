@@ -3,7 +3,7 @@
 <?php include "nav.php";?>
 <div id = "continut_pag">
   <main>
-    <h3 class="centrat"><br><br>Trimite mesajul tau!</h3>
+    <h3 class="formular centrat"><br><br>Trimite mesajul tau!</h3>
     <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #1c1e1c;">
       <br>  <br>  <br>   <br>  
      <form name="formular" method="post" action="introducere.php" class="centrat">
@@ -35,7 +35,7 @@
         </tr>
       </table>
     </form>	
-  </main>>	
+  </main>	
 </div>
 <?php include "footer.php";?>
 </div>

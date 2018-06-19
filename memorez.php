@@ -8,7 +8,6 @@
 session_start();
 include("conn.php");
 ?>
-<section id="container">
   <?php 
 
     function testare($data) {
@@ -33,7 +32,39 @@ include("conn.php");
     $adresa = testare($_REQUEST["adr"]);
     $email = testare($_REQUEST["email"]);
     $parola = testare($_REQUEST["pw"]);
-    
+
+
+      if(is_numeric($tel)){  // return **TRUE** if it is numeric
+
+    echo '';
+    }else{
+    echo '<h3 class="centrat"><br><br>Numarul de <i>TELEFON</i> trebuie sa contina doar numere intregi!<h3><br>';
+     echo '<form class="centrat"><input type="button" value="Completati formularul!" onClick="location.href=\'comanda.php\'"></form></center>';
+   
+     $cnx = null;
+}
+   if(is_numeric($parola)){  // return **TRUE** if it is numeric
+
+    echo '';
+    }else{
+    echo '<h3 class="centrat"><br><br><i>PAROLA</i> trebuie sa contina 4 numere intregi!<h3><br>';
+     echo '<form class="centrat"><input type="button" value="Completati formularul!" onClick="location.href=\'comanda.php\'"></form></center>';
+   
+     $cnx = null;
+} 
+  
+  if(empty($nume))
+{
+    echo '<h3 class="centrat"><br><br><br><br><br>Va rugam completati campurile ramase libere!<br><br>';
+    echo '<form class="centrat"><input type="button" value="Completati formularul!" onClick="location.href=\'comanda.php\'"></form></center>';
+   
+}
+
+ else {
+  echo "";
+}
+  
+  
     if(isset($cnx)) {
    //  Inserez in tabelul "clienti"
       $cda = "INSERT into clienti values(:tel, :parola, :nume, :adresa, :email)";
@@ -54,9 +85,10 @@ include("conn.php");
       $interogare1 = $cnx->prepare("INSERT INTO COMENZI VALUES (NULL, '$tel', '$item', '1', '$data')");
       $interogare1->execute();
   }
- echo '<br><br><br><br><h3 class="centrat">';
+
+ echo '<br><br><br><br><br><br><br><h3 class="centrat">';
   echo 'Comanda preluata pentru '.$nume.' <br /> in data de '.$data.'! <br /> Ve-ti fi contactat/a telefonic in cel mai scurt timp posibil pentru confirmarea comenzii!';
-  echo ' <br />Va multumim!</h1><br />';
+  echo ' <br />Va multumim!</h1><br><br><br><br>';
    // Golesc cosul memorat in $_SESSION['cos_cumparaturi'], urmeaza comanda
   unset($_SESSION['cos_cumparaturi']);
   $cnx = null;

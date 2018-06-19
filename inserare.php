@@ -1,9 +1,8 @@
-
 <?php include "header.php";?>
 <?php include "nav.php";?>
 <div id = "continut_pag">
-	<main>
-		<?php
+  <main>
+    <?php
    function testare($data) {
     $data = trim($data); 
     $data = stripslashes($data); 
@@ -32,7 +31,6 @@
   $nume = testare($_REQUEST["nume"]); 
   $prezentare = testare($_REQUEST["prez"]); 
   $pretul = testare($_REQUEST["pret"]);
-
   include("conn.php");
   if(isset($cnx)) {
    $cda= "INSERT INTO produse (id_produs, id_categ, prod, imag1, imag2 , pret, prezentare) VALUES (null, :idcateg, :numeprod, :numeimagine, :numeimaginemare,  :pret, :prez)";
@@ -68,7 +66,6 @@
     echo "Eroare la incarcarea fisierului"; 
     exit; 
   }
-
   echo "<br><br><br><br><p class=\"inserare centrat\">";
   echo "<h3 class=\"centrat\">Produsul s-a adaugat in baza de date!</h3><br><br>";
   echo "<form class=\"centrat\"><input type=button value=\"Adauga alt produs\"

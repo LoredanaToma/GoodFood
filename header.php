@@ -3,6 +3,7 @@
 <head>
   <title>GoodFood</title>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="imagini/icon-title.png"  />
   <link href="css/GoodFood.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css"> 
@@ -22,18 +23,18 @@
 <body>
   <div id="continut">
     <header>
-      <div class="row-header">
+      <div class="header">
        <div class="col-sm-1 col-md-1 col-lg-10" style="background-color:#1c1e1c;">
         <a href="livrare.php">Informatii privind livrarea </a></div>
         <div class="col-sm-1 col-md-1 col-lg-2" style="background-color:#1c1e1c;">
-         |<a href="vizite.php">Vezi impresiile clientilor nostri</a></div>
+         |<a href="vizite.php">Impresiile clientilor nostri</a></div>
        </div>
 
             
         <div class="logo">
-          <div class="col-sm-12 col-md-12 col-lg-12" style="background-image:url('imagini/header.jpg');">
+          <div class="col-sm-12 col-md-12 col-lg-12" style="background-image:url('imagini/header-dark1.jpg');">
             
-              <a href="index.php"><img src="imagini/imageedit_4_2869990415.png" alt="GoodFood" class="responsive" width="1200" height="300"></a>
+            <a href="index.php"><img src="imagini/imageedit_4_2869990415.png" alt="GoodFood" class="responsive" ></a>
            
           </div>
           

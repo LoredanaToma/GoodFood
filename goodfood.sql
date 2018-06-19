@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 13, 2018 at 03:20 PM
+-- Generation Time: Jun 18, 2018 at 08:39 PM
 -- Server version: 5.7.21
 -- PHP Version: 7.2.4
 
@@ -51,7 +51,7 @@ INSERT INTO `admin` (`id_admin`, `nume`, `pass`) VALUES
 
 DROP TABLE IF EXISTS `categorii`;
 CREATE TABLE IF NOT EXISTS `categorii` (
-  `id_categ` int(11) NOT NULL AUTO_INCREMENT,
+  `id_categ` int(4) NOT NULL AUTO_INCREMENT,
   `categ` varchar(30) NOT NULL,
   PRIMARY KEY (`id_categ`)
 ) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
@@ -82,22 +82,22 @@ INSERT INTO `categorii` (`id_categ`, `categ`) VALUES
 
 DROP TABLE IF EXISTS `clienti`;
 CREATE TABLE IF NOT EXISTS `clienti` (
-  `cnp` varchar(13) NOT NULL,
+  `tel` varchar(20) NOT NULL,
   `parola` char(32) NOT NULL,
   `nume` varchar(30) NOT NULL,
   `adresa` varchar(50) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `telefon` varchar(20) NOT NULL,
-  PRIMARY KEY (`cnp`)
+  PRIMARY KEY (`tel`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `clienti`
 --
 
-INSERT INTO `clienti` (`cnp`, `parola`, `nume`, `adresa`, `email`, `telefon`) VALUES
-('2860104270042', '81dc9bdb52d04dc20036dbd8313ed055', 'Mihai Muresanu', 'Strada Lalelor nr. 5', 'muresan@gmail.com', '0743212121'),
-('2860104270041', '81dc9bdb52d04dc20036dbd8313ed055', 'Toma Loredana', 'Iosiv Sava nr. 34', 'tomaloredana@gmail.com', '0746323991');
+INSERT INTO `clienti` (`tel`, `parola`, `nume`, `adresa`, `email`) VALUES
+('0741525889', '81dc9bdb52d04dc20036dbd8313ed055', 'Alina Florescu', 'Strada Lalelor nr. 5', 'alinaFlorescu@yahoo.com'),
+('0264555888', '81dc9bdb52d04dc20036dbd8313ed055', 'Laura Dana', 'Strada Manastirii nr.9', 'laura_dana@gmail.com'),
+('0745254878', '81dc9bdb52d04dc20036dbd8313ed055', 'ana', 'aaaa', 'ddddd');
 
 -- --------------------------------------------------------
 
@@ -108,20 +108,19 @@ INSERT INTO `clienti` (`cnp`, `parola`, `nume`, `adresa`, `email`, `telefon`) VA
 DROP TABLE IF EXISTS `comenzi`;
 CREATE TABLE IF NOT EXISTS `comenzi` (
   `cod_comanda` int(4) NOT NULL AUTO_INCREMENT,
-  `cnp` varchar(20) NOT NULL,
-  `id_produs` int(2) NOT NULL,
-  `bucati` int(2) NOT NULL,
+  `tel` varchar(20) NOT NULL,
+  `id_produs` int(4) NOT NULL,
+  `bucati` int(4) NOT NULL,
   `data_comenzii` date NOT NULL,
   PRIMARY KEY (`cod_comanda`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=63 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `comenzi`
 --
 
-INSERT INTO `comenzi` (`cod_comanda`, `cnp`, `id_produs`, `bucati`, `data_comenzii`) VALUES
-(18, '2860104270042', 20, 1, '2018-06-09'),
-(17, '2860104270041', 17, 1, '2018-06-09');
+INSERT INTO `comenzi` (`cod_comanda`, `tel`, `id_produs`, `bucati`, `data_comenzii`) VALUES
+(62, '0745254878', 92, 1, '2018-06-18');
 
 -- --------------------------------------------------------
 
@@ -132,14 +131,14 @@ INSERT INTO `comenzi` (`cod_comanda`, `cnp`, `id_produs`, `bucati`, `data_comenz
 DROP TABLE IF EXISTS `produse`;
 CREATE TABLE IF NOT EXISTS `produse` (
   `id_produs` int(4) NOT NULL AUTO_INCREMENT,
-  `id_categ` int(2) NOT NULL,
+  `id_categ` int(4) NOT NULL,
   `prod` varchar(50) NOT NULL,
   `imag1` varchar(30) NOT NULL,
   `imag2` varchar(30) NOT NULL,
   `pret` double NOT NULL,
   `prezentare` varchar(500) NOT NULL,
   PRIMARY KEY (`id_produs`)
-) ENGINE=MyISAM AUTO_INCREMENT=126 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=134 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `produse`
@@ -259,7 +258,7 @@ INSERT INTO `produse` (`id_produs`, `id_categ`, `prod`, `imag1`, `imag2`, `pret`
 
 DROP TABLE IF EXISTS `vizitatori`;
 CREATE TABLE IF NOT EXISTS `vizitatori` (
-  `nr` int(2) NOT NULL AUTO_INCREMENT,
+  `nr` int(4) NOT NULL AUTO_INCREMENT,
   `nume` varchar(30) NOT NULL,
   `prenume` varchar(30) NOT NULL,
   `email` varchar(50) NOT NULL,

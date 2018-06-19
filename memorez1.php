@@ -2,7 +2,6 @@
 <?php include "header.php";?>
 <?php include "nav.php";?>
 <div class = "continut_pag">
-  
 <main>
    <?php 
     include("conn.php");
@@ -48,7 +47,7 @@
                 (NULL, '$codcli', '$item', '1', '$data')");
             $interogare1->execute();
         }
-  echo '<br><br><br><br><h3 class="centrat">';
+  echo '<br><br><br><br><br><br><h3 class="centrat">';
   echo 'Comanda preluata pentru '.$nume.' <br /> in data de '.$data.'! <br /> Ve-ti fi contactat/a telefonic in cel mai scurt timp posibil pentru confirmarea comenzii!';
   echo ' <br />Va multumim!</h1><br />';
         // Golesc cosul memorat in $_SESSION['cos_cumparaturi']
@@ -57,7 +56,7 @@
         echo '<h1 class="italic centrat">';
         echo 'Nume utilizator sau parola eronata!</h1>';
         echo '<br /><input id="btn" type="button" value = "Reintroduc datele" ';
-        echo 'onclick="return fclick()" /<<br />';
+        echo 'onclick="return fclick()" <br><br><br><br>';
   }
   $cnx = null;
 }

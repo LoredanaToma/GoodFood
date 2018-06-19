@@ -11,7 +11,7 @@
 
 #continut_pag {
 	width: 100%;
-	min-height: 2000px;
+    min-height: 1500px;
 	background-color:#1c1e1c;
 	margin: 0 auto;
 	overflow: hidden;
@@ -19,16 +19,14 @@
 
 
 header {
-	img: left;
 	float: left;
 	width: 100%;
 	overflow: hidden;
 	text-align: right;
 	background-color:#1c1e1c;
 }
-nav{
-color:#72f972;
-}
+
+
 .article-row{
 	width: 100%;
     height: auto;
@@ -51,7 +49,6 @@ input[type=text],[type=password]{
 	border-radius: 3px;
 	font-size: 12px;
 	background-color: #1c1e1c;
-	background-image: url('searchicon.png');
 	background-position: 8px 18px; 
 	background-repeat: no-repeat;
 	padding: 12px 20px 12px 35px;
@@ -75,16 +72,20 @@ select[name=combo]{
 	color: black;
 }
 .alineat {
-	padding-left:50px;
+	margin: auto;
+	height: auto;
+	padding-left:10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding: 5px;
     float: left;
+    
 } 
-main {
-	float:left;
+float:left;
 	width: 100%;
 	height: 1000px;
 	background-color:#1c1e1c;
-	border-image: 2px;
-}
+    border-image: 2px;
 
 footer {
 	height: 100px;
@@ -111,7 +112,7 @@ footer {
 
 
 a {
-
+  
 	color:#72f972;
 	padding: 5px 15px;
 	
@@ -119,6 +120,7 @@ a {
 
 a:hover { 
 	color:#72f972;
+	
 }
 
 div.gallery {
@@ -260,8 +262,22 @@ div.desc {
 }
 
 .produs{
-padding-right: 5px;
-padding: 2px;
-float: center;
+margin-left: 40px;
+width:100%;
 
+
+}
+ul{ 
+    margin:5px;
+	border:1px solid #ccc;
+	float:left;
+	list-style-type: none;
+    padding:0 ;
+   
+}
+li{ 
+	margin:0 auto;
+	height: auto;
+	padding: 5px;
+    text-decoration: none;
 }

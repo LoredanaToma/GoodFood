@@ -36,13 +36,11 @@
 
 
 <tr>
-   <td>Selectati imaginea: </td>
+   <td>Selectati imaginea mica: </td>
    <td><input type="file" name="fisier" /></td>
 </tr>
-
-
 <tr>
-   <td>Imaginea mare: </td>
+   <td>Selectati imaginea mare: </td>
    <td><input type="file" name="mare" /></td>
 </tr>
 
