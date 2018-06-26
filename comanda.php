@@ -21,7 +21,7 @@
            $cli = $_REQUEST['client'];
  if ($cli==0) {  //  Client nou!
   ?>
-  <form name="formular" method="post" action="memorez.php"  class="centrat">
+  <form name="formular" method="post" onclick= "myFunction()" action="memorez.php"  class="centrat">
     <table class="login centrat">
 
       <?php 
@@ -29,7 +29,7 @@
       ?>
 
       <tr>
-       <td>Nume </td>
+       <td>Nume * </td>
        <td> <input type="text" name = num> </td>
      </tr>
      
@@ -38,7 +38,7 @@
       <td><input type="text" name = adr></td>
     </tr>
     <tr>
-     <td>Telefon </td>
+     <td>Telefon * </td>
      <td> <input type="text" name = tel> </td>
    </tr>
 
@@ -48,7 +48,7 @@
   </tr>
 
   <tr>
-    <td>Parola </td>
+    <td>Parola * </td>
     <td><input type="password" name = pw></td>
   </tr>
 
@@ -57,6 +57,7 @@
   </tr>
 </table>
 </form>
+
 
      <?php  //  Reiau scriptul
    } 

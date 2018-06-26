@@ -38,26 +38,27 @@ include("conn.php");
 
     echo '';
     }else{
-    echo '<h3 class="centrat"><br><br>Numarul de <i>TELEFON</i> trebuie sa contina doar numere intregi!<h3><br>';
-     echo '<form class="centrat"><input type="button" value="Completati formularul!" onClick="location.href=\'comanda.php\'"></form></center>';
+    echo '<h3 class="centrat"><br><br>Numarul de telefon trebuie sa contina doar cifre, va rugam verificati!<h3><br>';
+     echo '<form class="centrat"><input type="button" value="Back!" onClick="location.href=\'comanda.php\'"></form></center>';
    
      $cnx = null;
 }
-   if(is_numeric($parola)){  // return **TRUE** if it is numeric
+   if(empty($parola)){  // return **TRUE** if it is numeric
 
-    echo '';
-    }else{
-    echo '<h3 class="centrat"><br><br><i>PAROLA</i> trebuie sa contina 4 numere intregi!<h3><br>';
-     echo '<form class="centrat"><input type="button" value="Completati formularul!" onClick="location.href=\'comanda.php\'"></form></center>';
-   
-     $cnx = null;
-} 
-  
+    echo '<h3 class="centrat"><br><br>Introduceti o parola!<h3><br>';
+    echo '<form class="centrat"><input type="button" value="Back!" onClick="location.href=\'comanda.php\'"></form></center>';
+    $cnx = null;
+  }
+
+     else { 
+      echo ''; 
+    }
+
   if(empty($nume))
 {
-    echo '<h3 class="centrat"><br><br><br><br><br>Va rugam completati campurile ramase libere!<br><br>';
-    echo '<form class="centrat"><input type="button" value="Completati formularul!" onClick="location.href=\'comanda.php\'"></form></center>';
-   
+    echo '<h3 class="centrat"><br><br><br><br><br>Va rugam scrieti-va numele!<br><br>';
+    echo '<form class="centrat"><input type="button" value="Back!" onClick="location.href=\'comanda.php\'"></form></center>';
+    $cnx = null;
 }
 
  else {
@@ -82,11 +83,11 @@ include("conn.php");
       // Caut produsul in baza de date dupa $item
         date_default_timezone_set('Europe/Bucharest');
       $data = date('Y-m-d'); // data in format aaaa-ll-dd
-      $interogare1 = $cnx->prepare("INSERT INTO COMENZI VALUES (NULL, '$tel', '$item', '1', '$data')");
+      $interogare1 = $cnx->prepare("INSERT INTO comenzi VALUES (NULL, '$tel', '$item', '1', '$data')");
       $interogare1->execute();
   }
 
- echo '<br><br><br><br><br><br><br><h3 class="centrat">';
+  echo '<br><br><br><br><br><br><br><h3 class="centrat">';
   echo 'Comanda preluata pentru '.$nume.' <br /> in data de '.$data.'! <br /> Ve-ti fi contactat/a telefonic in cel mai scurt timp posibil pentru confirmarea comenzii!';
   echo ' <br />Va multumim!</h1><br><br><br><br>';
    // Golesc cosul memorat in $_SESSION['cos_cumparaturi'], urmeaza comanda

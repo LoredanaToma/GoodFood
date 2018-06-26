@@ -21,7 +21,6 @@
 header {
 	float: left;
 	width: 100%;
-	overflow: hidden;
 	text-align: right;
 	background-color:#1c1e1c;
 }
@@ -81,11 +80,7 @@ select[name=combo]{
     float: left;
     
 } 
-float:left;
-	width: 100%;
-	height: 1000px;
-	background-color:#1c1e1c;
-    border-image: 2px;
+
 
 footer {
 	height: 100px;
@@ -111,17 +106,7 @@ footer {
 }
 
 
-a {
-  
-	color:#72f972;
-	padding: 5px 15px;
-	
-}
 
-a:hover { 
-	color:#72f972;
-	
-}
 
 div.gallery {
 	margin: 2px;
@@ -160,13 +145,13 @@ div.desc {
 }
 
 .topnav a:hover {
-	background-color: #274728;
-	color:#72f972;
+	
+	color:#007bff;
 }
 
 .active {
 	background-color: #1c1e1c;
-	color: green;
+
 }
 
 .topnav .icon {
@@ -264,6 +249,7 @@ div.desc {
 .produs{
 margin-left: 40px;
 width:100%;
+display:block;
 
 
 }
@@ -275,7 +261,8 @@ ul{
     padding:0 ;
    
 }
-li{ 
+li {  
+	
 	margin:0 auto;
 	height: auto;
 	padding: 5px;

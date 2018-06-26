@@ -27,7 +27,7 @@
        <div class="col-sm-1 col-md-1 col-lg-10" style="background-color:#1c1e1c;">
         <a href="livrare.php">Informatii privind livrarea </a></div>
         <div class="col-sm-1 col-md-1 col-lg-2" style="background-color:#1c1e1c;">
-         |<a href="vizite.php">Impresiile clientilor nostri</a></div>
+         | <a href="vizite.php">Impresiile clientilor nostri</a></div>
        </div>
 
             

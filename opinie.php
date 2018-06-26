@@ -9,22 +9,22 @@
      <form name="formular" method="post" action="introducere.php" class="centrat">
        <table class="login centrat">
         <tr>
-         <td>Numele:</td>
+         <td>Numele </td>
          <td><input type="text" name="nume"  /></td>   
        </tr>
 
        <tr>
-         <td>Prenumele:</td>
+         <td>Prenumele</td>
          <td><input type="text" name="prenume" /></td>
        </tr>
 
        <tr>
-         <td>E-mail:</td>
+         <td>E-mail</td>
          <td><input type="text" name="email"  /></td>
        </tr>
 
        <tr>
-         <td>Mesajul tau: </td>
+         <td>Mesajul tau * </td>
          <td><textarea name="mesaj" rows=5 ></textarea></td>
        </tr>
 
